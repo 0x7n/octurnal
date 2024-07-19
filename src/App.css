@@ -1,0 +1,43 @@
+body {
+    cursor: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+  
+.no-scroll {
+    overflow: hidden;
+}
+
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(80, 40, 85, 0.7);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
+    z-index: 9999;
+}
+
+.curved-underline {
+    position: relative;
+    overflow: hidden;
+}
+  
+.curved-underline::after {
+    width: 100%;
+    border-width: 2px;
+    top: 37px;
+    border-color: #5f27a0a1 transparent transparent transparent;
+    height: 7px;
+    border-style: solid;
+    position: absolute;
+    content: "";
+    border-radius: 50% 50% 0% 0%;
+    bottom: 10px;
+    left: 0px;
+}
