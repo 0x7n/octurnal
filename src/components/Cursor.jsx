@@ -21,7 +21,6 @@ const Cursor = () => {
             x: position.x - 10,
             y: position.y - 10,
             transition: {
-                type: "smooth",
                 duration: 0,
               },
         }
