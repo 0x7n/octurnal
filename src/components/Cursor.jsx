@@ -28,9 +28,7 @@ const Cursor = () => {
 
     return (
         <motion.div 
-            // ref={cursorRef} 
             className='custom-cursor' 
-            // style={{transform: `translate(${position.x}px, ${position.y}px)`}}
             variants={variants}
             animate="default"
         >

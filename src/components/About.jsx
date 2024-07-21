@@ -8,7 +8,7 @@ const About = () => {
     return (
         <motion.div 
             id='about'
-            className='min-h-screen flex flex-col justify-center max-w-lg'
+            className='section min-h-screen flex flex-col justify-center max-w-lg'
         >
             <motion.h1 
                 className='opacity-60 text-3xl font-bold tracking-tighter'
@@ -22,7 +22,8 @@ const About = () => {
                 }}
     
                 viewport={{
-                    amount: 'all',
+                    // amount: 'all',
+                    margin: '-220px',
                     once: false
                 }}
                 transition={{
@@ -46,7 +47,7 @@ const About = () => {
                 }}
     
                 viewport={{
-                    amount: 'all',
+                    margin: '-200px',
                     once: false
                 }}
                 transition={{
@@ -54,7 +55,7 @@ const About = () => {
                     duration: 1
                 }}
             >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sed provident odit excepturi fugiat cumque maiores. At eum, provident repellendus nemo illum expedita ea, numquam assumenda deleniti eligendi praesentium exercitationem?
+                Self-taught progammer with more than 3 years of experience. Started off when I was 14 with making games in Unity, later moved on to learning more about C++ and gamehacking. Currently learning more about web development using React and Tailwind for the frontend and Express and MongoDB for the backend. Designing websites with Figma.
             </motion.p>
         </motion.div>
     )

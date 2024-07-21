@@ -26,10 +26,10 @@ const Hero = () => {
         }
     }
 
-    const letters = 'OCTURNAL.'.split('');
+    const letters = 'OCTURNAL'.split('');
 
     return (
-        <motion.div className='w-full h-screen mx-auto text-center flex flex-col justify-center align-middle items-center'>
+        <motion.div className='section w-full h-screen mx-auto text-center flex flex-col justify-center align-middle items-center'>
             <img src={lights2} 
                 className='absolute -z-1 object-fill top-0'
                 initial={{opacity: 0}}
@@ -49,7 +49,7 @@ const Hero = () => {
                 </span>
             </motion.h1>
             <motion.div
-                className="flex flex-row justify-center align-middle items-center gap-5"
+                className="flex flex-row justify-center align-middle items-center gap-6"
                 variants={variants}
                 initial='hidden'
                 animate='visible'
